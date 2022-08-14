@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laravel Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans:ital,wght@0,400;0,600;1,700&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: Open Sans, san-serif;">
+    
+    <section class="px-6 py-4 bg:blue-10">
+
+        <nav class="md:flex justify-between items-center">
+            <div>
+                <a href="/">
+                    <img src="./images/logo.svg" alt="Logo" width="165" height="16">
+                </a>
+            </div>
+
+            <div class="hidden md:block">
+                <a href="/" class="text-xs text-black font-bold">Home Page</a>
+                <a href="#" class="bg-blue-500 ml-3 rounded-full text-xs text-white font-semibold px-5 py-3">Suscribe For Updates</a>
+            </div>
+        </nav>
+
+        <main class="max-w-6xl mt-10 mx-auto space-y-6">
+            <article class="max-w-4xl md:grid md:grid-cols-12 md:gap-x-10">
+                <div class="col-span-4 md:text-center mb-10">
+                    <img src="./images/illustration-1.png" class="rounded-xl" alt="">
+                    <span class="block mt-3 text-gray-400 text-xs">
+                        Published <time>1 Day Ago</time>
+                    </span>
+                    <div class="mt-3 flex md:justify-center items-center text-sm text-left">
+                        <img src="./images/lary-avatar.svg" class="mr-2" alt="" srcset="">
+                        <div>
+                            <h5 class="font-bold">Lary Laracore</h5>
+                            <h6>Mascot at Laracasts</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-8">
+                    <div class="flex justify-between mb-4">
+                        <a href="#" class="inline-flex items-center hover:text-blue-400 transition-colors duration-300">
+                            <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
+                            Back to Home
+                        </a>
+                        <div class="space-x-2">
+                            <a class="px-2 py-1 border border-blue-300 text-blue-300 uppercase rounded-full text-xs font-semibold" href="">Technique</a>
+                            <a class="px-2 py-1 border border-red-300 text-red-300 uppercase rounded-full text-xs font-semibold" href="">Updates</a>
+                        </div>
+                    </div>
+                    <h1 class="text-4xl font-bold mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    <div class="space-y-6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iusto iure vel odio accusamus?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed soluta aliquam excepturi mollitia earum, dolor neque in harum, deserunt accusantium corporis nulla voluptate vero.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, sit repudiandae? Repudiandae, incidunt ex repellat alias laborum possimus explicabo!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente magnam ipsum ab vel deserunt debitis odio minima hic incidunt doloribus repellendus facilis ad, impedit aliquid atque ex fuga ea voluptatem doloremque totam blanditiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius omnis in.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut labore blanditiis exercitationem quod sunt laudantium dolorum iusto necessitatibus aspernatur corporis cumque velit debitis impedit incidunt est, omnis quae eos quas? Ducimus, neque doloribus!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, possimus et. Labore similique distinctio repudiandae fuga, omnis laboriosam iure. Autem, nam expedita.</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer class="py-8 px-10 mt-16 text-center bg-gray-100 rounded-xl border border-black border-opacity-5">
+            <img src="./images/lary-newsletter-icon.svg" class="mx-auto" alt="" srcset="">
+            <h5 class="text-3xl">Stay in Touch With Latest Posts</h5>
+            <p>Promise to keep inbox clean. No Bugs.</p>
+            <div class="mt-6">
+                <div class="rounded-full md:inline-block mx-auto md:bg-gray-300">
+                    <form class="md:flex" action="" method="post">
+                        <div class="px-4 py-2 md:inline-flex items-center">
+                            <label class="hidden md:block" for="email">
+                                <img src="./images/mailbox-icon.svg" alt="">
+                            </label>
+                            <input class="px-3 py-2 md:p-0 md:bg-transparent md:pl-4" id="email" type="text" placeholder="Your Email address">
+                        </div>
+                        <button class="px-4 py-2 font-bold rounded-full text-white bg-blue-500 hover:bg-blue-600" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>
