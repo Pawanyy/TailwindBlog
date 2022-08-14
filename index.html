@@ -14,14 +14,14 @@
     
     <section class="px-6 py-4 bg:blue-10">
 
-        <nav class="flex justify-between items-center">
+        <nav class="md:flex justify-between items-center">
             <div>
                 <a href="/">
                     <img src="./images/logo.svg" alt="Logo" width="165" height="16">
                 </a>
             </div>
 
-            <div>
+            <div class="hidden md:block">
                 <a href="/" class="text-xs text-black font-bold">Home Page</a>
                 <a href="#" class="bg-blue-500 ml-3 rounded-full text-xs text-white font-semibold px-5 py-3">Suscribe For Updates</a>
             </div>
@@ -42,22 +42,22 @@
                     I'm going to keep you guys up to speed with what's going on!
                 </p>
 
-                <div class="tw-flex tw-justify-center space-x-4 mt-10">
-                    <span class="relative inline-flex bg-gray-200 rounded-full items-center">
+                <div class="tw-flex tw-justify-center space-y-4 md:space-y-0 md:space-x-4 mt-10">
+                    <span class="relative flex md:inline-flex bg-gray-200 rounded-full items-center">
                         <select class="reset appearance-none py-2 px-5 pr-8 bg-transparent font-bold">
                             <option selected> Category</option>
                             <option>Style</option>
                         </select>
                         <svg class="reset rotate-90 absolute right-2 text-xs pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
                     </span>
-                    <span class="relative inline-flex bg-gray-200 rounded-full items-center">
+                    <span class="relative flex md:inline-flex bg-gray-200 rounded-full items-center">
                         <select class="reset appearance-none py-2 px-5 pr-8 bg-transparent font-bold">
                             <option selected> Other Filters</option>
                             <option>Style</option>
                         </select>
                         <svg class="reset rotate-90 absolute right-2 text-xs pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
                     </span>
-                    <span class="relative inline-flex bg-gray-200 rounded-full px-3 py-2">
+                    <span class="relative flex md:inline-flex bg-gray-200 rounded-full px-3 py-2">
                         <form action="" method="post">
                             <input type="text" name="searchTerm" class="bg-transparent placeholder-black font-bold" placeholder="Search">
                         </form>
@@ -102,7 +102,7 @@
                                     <h6>Mascot at Laracasts</h6>
                                 </div>
                             </div>
-                            <div>
+                            <div class="hidden md:block">
                                 <a href="#" class="font-semibold text-xs rounded-full bg-gray-200 py-2 px-5">Read More</a>
                             </div>
                         </footer>
@@ -147,7 +147,7 @@
                                         <h6>Mascot at Laracasts</h6>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="hidden md:block">
                                     <a href="#" class="font-semibold text-xs rounded-full bg-gray-200 py-2 px-5">Read More</a>
                                 </div>
                             </footer>
@@ -189,7 +189,7 @@
                                         <h6>Mascot at Laracasts</h6>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="hidden md:block">
                                     <a href="#" class="font-semibold text-xs rounded-full bg-gray-200 py-2 px-5">Read More</a>
                                 </div>
                             </footer>
@@ -234,7 +234,7 @@
                                         <h6>Mascot at Laracasts</h6>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="hidden md:block">
                                     <a href="#" class="font-semibold text-xs rounded-full bg-gray-200 py-2 px-5">Read More</a>
                                 </div>
                             </footer>
@@ -276,7 +276,7 @@
                                         <h6>Mascot at Laracasts</h6>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="hidden md:block">
                                     <a href="#" class="font-semibold text-xs rounded-full bg-gray-200 py-2 px-5">Read More</a>
                                 </div>
                             </footer>
@@ -318,7 +318,7 @@
                                         <h6>Mascot at Laracasts</h6>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="hidden md:block">
                                     <a href="#" class="font-semibold text-xs rounded-full bg-gray-200 py-2 px-5">Read More</a>
                                 </div>
                             </footer>
@@ -333,13 +333,13 @@
             <h5 class="text-3xl">Stay in Touch With Latest Posts</h5>
             <p>Promise to keep inbox clean. No Bugs.</p>
             <div class="mt-6">
-                <div class="rounded-full inline-block mx-auto bg-gray-300">
-                    <form class="flex" action="" method="post">
-                        <div class="px-4 py-2 inline-flex items-center">
-                            <label for="email">
+                <div class="rounded-full md:inline-block mx-auto md:bg-gray-300">
+                    <form class="md:flex" action="" method="post">
+                        <div class="px-4 py-2 md:inline-flex items-center">
+                            <label class="hidden md:block" for="email">
                                 <img src="./images/mailbox-icon.svg" alt="">
                             </label>
-                            <input class="bg-transparent pl-4" id="email" type="text" placeholder="Your Email address">
+                            <input class="px-3 py-2 md:p-0 md:bg-transparent md:pl-4" id="email" type="text" placeholder="Your Email address">
                         </div>
                         <button class="px-4 py-2 font-bold rounded-full text-white bg-blue-500 hover:bg-blue-600" type="submit">Submit</button>
                     </form>
